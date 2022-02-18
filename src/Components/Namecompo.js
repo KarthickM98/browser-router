@@ -14,9 +14,9 @@ const Namecompo = () => {
   return (
     <>
       <div>Namecompo</div>
-      <h4>Name of the students is {
+      <h4>Name of the students is {       // eslint-disable-next-line
           students.map((val)=>{
-              if(val.id==id){
+              if(val.id===id){
                   return(<>{val.name}</>)
               }
           })
